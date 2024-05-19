@@ -137,3 +137,69 @@ function displayConcepts() {
 
 // Call the function to display concepts
 displayConcepts();
+
+// Function to display popular interview algorithms
+function displayAlgorithms() {
+  const output = document.getElementById("algorithmsOutput");
+
+  // Palindrome Check
+  const isPalindrome = (str) => {
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    return cleanedStr === cleanedStr.split("").reverse().join("");
+  };
+  output.innerHTML += `<p><strong>Palindrome Check:</strong> 'madam' is a palindrome: ${isPalindrome(
+    "madam"
+  )}</p>`;
+
+  // Fibonacci Sequence
+  const fibonacci = (n) => {
+    const seq = [0, 1];
+    for (let i = 2; i < n; i++) {
+      seq.push(seq[i - 1] + seq[i - 2]);
+    }
+    return seq;
+  };
+  output.innerHTML += `<p><strong>Fibonacci Sequence:</strong> First 10 numbers: ${fibonacci(
+    10
+  ).join(", ")}</p>`;
+
+  // Factorial Calculation
+  const factorial = (n) => {
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+  };
+  output.innerHTML += `<p><strong>Factorial Calculation:</strong> 5! = ${factorial(
+    5
+  )}</p>`;
+
+  // Prime Number Check
+  const isPrime = (num) => {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) return false;
+    }
+    return true;
+  };
+  output.innerHTML += `<p><strong>Prime Number Check:</strong> 7 is prime: ${isPrime(
+    7
+  )}</p>`;
+
+  // Anagram Check
+  const areAnagrams = (str1, str2) => {
+    const normalize = (str) =>
+      str
+        .replace(/[^A-Za-z0-9]/g, "")
+        .toLowerCase()
+        .split("")
+        .sort()
+        .join("");
+    return normalize(str1) === normalize(str2);
+  };
+  output.innerHTML += `<p><strong>Anagram Check:</strong> 'listen' and 'silent' are anagrams: ${areAnagrams(
+    "listen",
+    "silent"
+  )}</p>`;
+}
+
+// Call the function to display algorithms
+displayAlgorithms();

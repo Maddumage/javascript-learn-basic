@@ -10,6 +10,7 @@ The project is organized into the following files and directories:
 
 - **index.html**: The main HTML file that sets up the structure of the web page.
 - **css/styles.css**: The CSS file for styling the HTML elements.
+- **js/algorithms.js**: JavaScript file containing popular interview algorithms.
 - **js/sorting.js**: Contains various sorting algorithm implementations.
 - **js/searching.js**: Contains various searching algorithm implementations.
 - **js/concepts.js**: Contains examples of basic and advanced JavaScript concepts.
@@ -76,7 +77,38 @@ The project covers the following JavaScript concepts:
 
 ### JavaScript Concepts
 
-The concepts are automatically displayed when you open the `index.html` file in your web browser. You can view examples of basic and advanced JavaScript concepts along with explanations.
+The project covers the following JavaScript concepts:
+
+- **Variables and Data Types**: Understanding different types of variables and data types in JavaScript.
+- **Functions**: Defining and invoking functions.
+- **Objects**: Creating and using objects.
+- **Arrays**: Working with arrays and array methods.
+- **Loops**: Using different types of loops to iterate over arrays.
+- **ES6 Features**: Understanding modern JavaScript features like arrow functions, promises, and async/await.
+
+### Popular Interview Algorithms
+
+The project includes implementations of the following popular interview algorithms:
+
+- **Palindrome Check**: Function to check if a given string is a palindrome.
+- **Fibonacci Sequence**: Function to generate the first `n` numbers in the Fibonacci sequence.
+- **Factorial Calculation**: Function to calculate the factorial of a given number.
+- **Prime Number Check**: Function to check if a given number is prime.
+- **Anagram Check**: Function to check if two given strings are anagrams of each other.
+
+## Usage
+
+### Sorting and Searching
+
+1. **Enter numbers**: Input a list of numbers separated by commas.
+2. **Choose a sorting algorithm**: Select a sorting algorithm from the dropdown menu.
+3. **Sort & Search**: Click the "Sort & Search" button to sort the array.
+4. **Enter a number to search**: Input a number to search within the sorted array.
+5. **Search**: Click the "Search" button to perform the search.
+
+### JavaScript Concepts and Interview Algorithms
+
+The concepts and algorithms are automatically displayed when you open the `index.html` file in your web browser. You can view examples of basic and advanced JavaScript concepts along with popular interview algorithm implementations.
 
 ## Contributions
 
