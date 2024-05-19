@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Learning Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h2>Sorting and Searching Project</h2>
+
+    <label for="numInput">Enter numbers (comma-separated):</label><br />
+    <input type="text" id="numInput" /><br />
+
+    <label for="sortingAlgorithm">Choose a sorting algorithm:</label><br />
+    <select id="sortingAlgorithm">
+      <option value="bubbleSort">Bubble Sort</option>
+      <option value="selectionSort">Selection Sort</option>
+      <option value="insertionSort">Insertion Sort</option>
+      <option value="mergeSort">Merge Sort</option>
+      <option value="quickSort">Quick Sort</option></select
+    ><br />
+
+    <button onclick="sortAndSearch()">Sort & Search</button><br />
+
+    <label for="searchNum">Enter number to search:</label><br />
+    <input type="text" id="searchNum" /><br />
+
+    <button onclick="search()">Search</button><br />
+
+    <div id="output"></div>
+
+    <h2>JavaScript Concepts</h2>
+    <div id="conceptsOutput"></div>
+
+    <script src="js/sorting.js"></script>
+    <script src="js/searching.js"></script>
+    <script src="js/concepts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
