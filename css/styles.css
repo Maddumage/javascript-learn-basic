@@ -1,14 +1,72 @@
-/* Add some basic styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
 input[type="text"], select {
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
 button {
-    margin: 10px 0;
+    display: inline-block;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
-h2 {
+
+button:hover {
+    background: #45a049;
+}
+
+#output, #conceptsOutput, #algorithmsOutput {
     margin-top: 20px;
 }

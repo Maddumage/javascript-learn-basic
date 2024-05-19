@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Learning Project</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <h2>Sorting and Searching Project</h2>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Learning Project</h1>
+    </header>
 
-    <label for="numInput">Enter numbers (comma-separated):</label><br>
-    <input type="text" id="numInput"><br>
+    <main>
+      <section id="sorting-searching">
+        <h2>Sorting and Searching</h2>
 
-    <label for="sortingAlgorithm">Choose a sorting algorithm:</label><br>
-    <select id="sortingAlgorithm">
-        <option value="bubbleSort">Bubble Sort</option>
-        <option value="selectionSort">Selection Sort</option>
-        <option value="insertionSort">Insertion Sort</option>
-        <option value="mergeSort">Merge Sort</option>
-        <option value="quickSort">Quick Sort</option>
-    </select><br>
+        <label for="numInput">Enter numbers (comma-separated):</label>
+        <input type="text" id="numInput" />
 
-    <button onclick="sortAndSearch()">Sort & Search</button><br>
+        <label for="sortingAlgorithm">Choose a sorting algorithm:</label>
+        <select id="sortingAlgorithm">
+          <option value="bubbleSort">Bubble Sort</option>
+          <option value="selectionSort">Selection Sort</option>
+          <option value="insertionSort">Insertion Sort</option>
+          <option value="mergeSort">Merge Sort</option>
+          <option value="quickSort">Quick Sort</option>
+        </select>
 
-    <label for="searchNum">Enter number to search:</label><br>
-    <input type="text" id="searchNum"><br>
+        <button onclick="sortAndSearch()">Sort & Search</button>
 
-    <button onclick="search()">Search</button><br>
+        <label for="searchNum">Enter number to search:</label>
+        <input type="text" id="searchNum" />
 
-    <div id="output"></div>
+        <button onclick="search()">Search</button>
 
-    <h2>JavaScript Concepts</h2>
-    <div id="conceptsOutput"></div>
+        <div id="output"></div>
+      </section>
 
-    <h2>Popular Interview Algorithms</h2>
-    <div id="algorithmsOutput"></div>
+      <section id="concepts">
+        <h2>JavaScript Concepts</h2>
+        <div id="conceptsOutput"></div>
+      </section>
+
+      <section id="algorithms">
+        <h2>Popular Interview Algorithms</h2>
+        <div id="algorithmsOutput"></div>
+      </section>
+    </main>
 
     <script src="js/sorting.js"></script>
     <script src="js/searching.js"></script>
     <script src="js/concepts.js"></script>
     <script src="js/algorithms.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

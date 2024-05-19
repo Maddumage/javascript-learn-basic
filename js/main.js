@@ -135,9 +135,6 @@ function displayConcepts() {
   asyncFunction();
 }
 
-// Call the function to display concepts
-displayConcepts();
-
 // Function to display popular interview algorithms
 function displayAlgorithms() {
   const output = document.getElementById("algorithmsOutput");
@@ -159,8 +156,8 @@ function displayAlgorithms() {
     }
     return seq;
   };
-  output.innerHTML += `<p><strong>Fibonacci Sequence:</strong> First 10 numbers: ${fibonacci(
-    10
+  output.innerHTML += `<p><strong>Fibonacci Sequence:</strong> First 5 numbers: ${fibonacci(
+    5
   ).join(", ")}</p>`;
 
   // Factorial Calculation
@@ -201,5 +198,6 @@ function displayAlgorithms() {
   )}</p>`;
 }
 
-// Call the function to display algorithms
+// Call the functions to display content
+displayConcepts();
 displayAlgorithms();
