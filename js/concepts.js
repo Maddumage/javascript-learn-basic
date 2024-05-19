@@ -12,12 +12,12 @@ function displayConcepts() {
   function greet(name) {
     return `Hello, ${name}!`;
   }
-  output.innerHTML += `<p><strong>Function:</strong> ${greet("Sumudu")}</p>`;
+  output.innerHTML += `<p><strong>Function:</strong> ${greet("John")}</p>`;
 
   // Objects
   const person = {
-    firstName: "Sumudu",
-    lastName: "Perera",
+    firstName: "John",
+    lastName: "Doe",
     age: 30,
   };
   output.innerHTML += `<p><strong>Object:</strong> ${person.firstName} ${person.lastName}, Age: ${person.age}</p>`;
